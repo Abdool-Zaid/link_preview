@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gets around link preview</title>
+</head>
+<body>
+    <a href="https://www.youtube.com/watch?v=WnnM1M4W82w" target="_blank" rel="noopener noreferrer"  id="link_safe">safe link</a>
+    
+</body>
+<script>
+     let link = document.getElementById("link_safe")
+     console.log(link)
+     link.addEventListener('click',(event)=>{
+        event.preventDefault()
+        console.log("clicked on link")
+        window.location.href="https://en.wikipedia.org/wiki/VNC#:~:text=VNC%20(Virtual%20Network%20Computing)%20is,screen%20updates%2C%20over%20a%20network."
+     })
+</script>
+</html>

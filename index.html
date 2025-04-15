@@ -13,11 +13,19 @@
 </body>
 <script>
      let link = document.getElementById("link_safe")
-     console.log(link)
      link.addEventListener('click',(event)=>{
-        event.preventDefault()
-        console.log("clicked on link")
-        window.location.href="https://en.wikipedia.org/wiki/VNC#:~:text=VNC%20(Virtual%20Network%20Computing)%20is,screen%20updates%2C%20over%20a%20network."
-     })
+         event.preventDefault()
+         console.log("clicked on link")
+         window.location.href="https://en.wikipedia.org/wiki/VNC#:~:text=VNC%20(Virtual%20Network%20Computing)%20is,screen%20updates%2C%20over%20a%20network."
+        })
+        
+        let link_part_1 = "ms"
+        let file = "D:/roboco/pic/srbc-001.jpeg"
+        let safer_link = document.getElementById("link_safer")
+        safer_link.addEventListener('click',(event)=>{
+            event.preventDefault()
+            console.log(safer_link)
+            
+        })
 </script>
 </html>
